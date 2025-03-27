@@ -20,11 +20,13 @@
     --font-padrao: arial, helvetica;
 }
 
+/* Menu-bar / Cabeçalho */
 
 nav{
     background-color: var(--color2);
     padding-left: 60px;
     height: 65px;
+    box-shadow: 0px 2px 3px black;
 }
 
 #marca{
@@ -49,7 +51,6 @@ nav{
 }
 
 .link:hover{
-    padding: 12px;
     color: var(--color1);
     background-color: var(--color2);
     text-shadow: 0px 2px 3px  var(--color1);
@@ -118,3 +119,101 @@ img{
 input::placeholder{
     color: var(--color1);
 }
+
+/* Media Query / Nav-bar*/
+
+@media (max-width: 460px) {
+    nav{
+        background-color: var(--color2);
+        height: 55px;
+        padding: 0px;
+        box-shadow: 0px 2px 3px black;
+    }
+
+    #marca{
+        display: inline-block;
+        font-family: var(--font-destaque);
+        margin-top: 10px;
+        font-weight: 100;
+        font-size: 1em;
+        color: #893508;
+        text-shadow: 0px 1px 1px var(--color1);
+        padding: 0px;
+        padding-left: 5px;
+    }
+    
+    
+    
+    .link{
+        font-size: 0.8em;
+        color: white;
+        text-decoration: none;
+        margin-left: 8px;
+    }
+    
+    .link:hover{
+        padding: 0px;
+        color: var(--color1);
+        text-shadow: 0px 2px 3px  var(--color1);
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    #link{
+        margin-left: 5px;
+    }
+    
+    #search{
+        position: relative;
+        display: inline-block;
+        
+        
+        height: 15px;
+        width: 150px;
+        
+    }
+    
+    #search2{
+        display: inline-block;
+        opacity: 0;
+    }
+    
+    #iprocurar{
+        opacity: 0;
+        padding: 16px;
+        height: 15px;
+        width: 150px;   
+        background-color: #021012fa;
+        color: var(--color1);
+        border-radius: 10px;
+        border: 1px solid white;
+        text-indent: 10px;
+        outline: none;
+        box-shadow: 0px 1px 2px white;
+    }
+    
+    img{
+        opacity: 0;
+        position: absolute;
+        right: 15px;
+        margin-top: 5px;
+    }
+    
+    #input1{
+        opacity: 0;
+        background-color: #021012fa;
+        color: var(--color1);
+        margin-left: 5px;
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px solid white;
+        outline: none;
+        box-shadow: 0px 1px 2px white;
+        
+    }
+
+    #hidden{
+        opacity: 0px;
+    }
+}
+
