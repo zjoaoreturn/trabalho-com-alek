@@ -122,7 +122,7 @@ input::placeholder{
 
 /* Media Query / Nav-bar*/
 
-@media (max-width: 460px) {
+@media (max-width: 520px) {
     nav{
         background-color: var(--color2);
         height: 55px;
@@ -148,7 +148,7 @@ input::placeholder{
         font-size: 0.8em;
         color: white;
         text-decoration: none;
-        margin-left: 8px;
+        margin-left: 4px;
     }
     
     .link:hover{
